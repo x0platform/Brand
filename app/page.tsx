@@ -1,25 +1,34 @@
-import Image from "next/image";
+"use client";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+import LeftSideMenu from "../components/LeftSideMenu";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="relative flex flex-col items-center justify-center min-h-[80vh] px-4 pt-32 text-center">
-      {/* Logo */}
-      <div className="mb-6">
-        <Image src="/logo.svg" alt="x0platform" width={340} height={80} priority />
+    <>
+      <Header />
+      <div className="main-section">
+        <div className="left-side">
+          <LeftSideMenu />
+        </div>
+        <div className="hero-section">
+          <Hero />
+        </div>
       </div>
-      {/* Tagline */}
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-primary">
-        Online, On Budget, On Point.
-      </h1>
-      <p className="mt-4 max-w-xl mx-auto text-lg sm:text-xl text-neutral-600 dark:text-neutral-300">
-        Zero configuration. Zero monthly fee. Launch your business bio, portfolio, or catalog in minutes.
-      </p>
-      <a
-        href="#pricing"
-        className="mt-8 inline-block px-8 py-3 rounded-lg bg-primary text-white font-bold text-lg shadow hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-neutral-900 transition"
-      >
-        See Pricing
-      </a>
-    </main>
+      <Footer />
+    </>
   );
 }
+
+// This is a functional component for the home page of a Next.js application.
+// It imports and uses several other components: Header, Footer, Hero, and LeftSideMenu.
+// The component returns a JSX structure that includes the Header at the top,
+// followed by a main content area that contains the LeftSideMenu and Hero components.
+// Finally, it includes the Footer at the bottom.
+// This structure allows for a consistent layout across the home page,
+// with a header, main content area, and footer.
+// The 'use client' directive indicates that this component is a client component,
+// which means it can use React hooks and manage local state.
+// The 'use client' directive is a special comment that indicates that this component should be rendered on the client side.
+// This is useful for components that need to interact with the browser or manage local state.

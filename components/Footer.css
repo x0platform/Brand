@@ -1,0 +1,22 @@
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer-social a {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #0070f3; /* You can change to match your branding */
+}
+
+.footer-social svg {
+  width: 24px;
+  height: 24px;
+}

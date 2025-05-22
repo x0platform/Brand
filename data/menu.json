@@ -1,0 +1,29 @@
+{
+  "Dashboard": ["Overview", "Stats", "Reports"],
+  "Management": ["Users", "Permissions", "Roles", "Settings"],
+  "Projects": ["Active Projects", "Archived Projects", "Templates"],
+  "Analytics": ["Traffic", "Engagement", "Conversion"],
+  "Integrations": ["API", "Webhooks", "Third-party Services"],
+  "Billing": ["Invoices", "Payment Methods", "Subscription"],
+  "User": ["Profile", "Settings", "Logout"],
+  "Admin": ["User Management", "System Settings", "Audit Logs"],
+  "Reports": ["Sales", "Performance", "User Activity"],
+  "Settings": ["General", "Privacy", "Security"],
+  "Support": ["Contact Us", "FAQs", "Community"],
+  "Feedback": ["Submit Feedback", "Feature Requests", "Bug Reports"],
+  "Profile": ["View Profile", "Edit Profile", "Change Password"],
+  "Security": ["Two-Factor Authentication", "Login History", "Active Sessions"],
+  "Notifications": [
+    "Email Notifications",
+    "Push Notifications",
+    "SMS Alerts",
+    "Alerts",
+    "Messages",
+    "Reminders"
+  ],
+  "User Management": ["Add User", "Edit User", "Delete User"],
+  "System Settings": ["Site Settings", "API Keys", "Backup"],
+  "Audit Logs": ["View Logs", "Export Logs", "Filter Logs"],
+
+  "Help": ["Documentation", "Support", "Feedback"]
+}

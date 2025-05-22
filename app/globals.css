@@ -1,9 +1,68 @@
-@import url("https://fonts.googleapis.com/css?family=Mulish:700,900&display=swap");
-
-html {
-  scroll-behavior: smooth;
-}
+html,
 body {
-  @apply bg-white text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 font-sans;
-  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  height: 60px;
+  background-color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.main-section {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.left-side {
+  width: 240px;
+  background-color: #f1f5f9;
+  overflow-y: auto;
+  border-right: 1px solid #e2e8f0;
+}
+
+.hero-section {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+.footer {
+  height: 120px;
+  background-color: #f3f4f6;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-weight: 500;
+  padding-top: 0.5rem;
 }

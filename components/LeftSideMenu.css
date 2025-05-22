@@ -1,0 +1,48 @@
+.left-side-menu {
+  width: 220px;
+  padding: 1rem;
+  background-color: #f9fafb;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #e5e7eb;
+}
+
+.menu-group {
+  margin-bottom: 1rem;
+}
+
+.menu-title {
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+  transition: background-color 0.2s ease;
+}
+
+.menu-title:hover {
+  background-color: #f3f4f6;
+}
+
+.submenu {
+  list-style: none;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.submenu-item {
+  cursor: pointer;
+  padding: 0.25rem 0;
+  color: #374151;
+  transition: color 0.2s ease;
+}
+
+.submenu-item:hover {
+  color: #2563eb;
+}
+
+.chevron {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
